@@ -297,3 +297,15 @@ footer{
   .voice{grid-template-columns:1fr 1fr}
   .card{min-height:360px}
 }
+
+/* スマホ時：本文の文字を少しだけ小さく */
+@media (max-width: 600px){
+  /* 読み物っぽい本文だけを対象にする */
+  .prose p,
+  .prose .lead-sub,
+  .section.prose p,
+  .section .prose p {
+    font-size: 0.95rem;   /* お好みで 0.92rem〜0.98rem に調整可 */
+    line-height: 1.95;    /* 行間は気持ち広めに */
+  }
+}
